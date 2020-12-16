@@ -1,4 +1,38 @@
+<!DOCTYPE html>
+<html>
 <head>
-  <title>Hello</title>
+<title>French quiz</title>
 </head>
-<body>I'm Vasso</body>
+<body>
+
+<h1>French quiz</h1>
+
+<img src="UNCHAT.jpg" alt="Un chat">
+<br>
+<button type="button" id="1" onclick="vrai()" >le/un chat</button>
+<button type="button" id="2" onclick="faux()" >la/une chat</button>
+<button type="button" id="3" onclick="faux()" >le/un chien</button>
+<p id="reponse1">
+    
+</p>
+<br>
+<img src="unchien.jpg" alt="Un chien">
+<br>
+<button type="button" id="2" onclick="faux()" >la/une chien</button>
+<button type="button" id="3" onclick="vrai()" >le/un chien</button>
+<button type="button" id="1" onclick="faux()" >du chien</button>
+<p id="reponse2">
+
+</p>
+</body>
+</html>
+
+<script>
+    alert("Salut, c'est un quiz")
+function vrai() {
+    document.getElementById("reponse").innerHTML = "vrai";
+}
+function faux() {
+    document.getElementById("reponse").innerHTML = 'faux';
+}
+</script>
