@@ -33,7 +33,7 @@ p {color: rgb(225, 65, 126);}
     width: 100%;
     height: 100px;
     display: block;
-    background-color: rgb(213, 156, 252);
+    background-color: rgb(206, 197, 255);
 }
 .inner_header{
     width: 80%;
@@ -42,7 +42,7 @@ p {color: rgb(225, 65, 126);}
     margin: 0 auto;
     background-color: white;
     outline-width: 20%;
-    outline-color: rgb(203, 136, 248);
+    outline-color:  rgb(206, 197, 255);
     outline-style: auto
     ;
 }
@@ -52,18 +52,18 @@ p {color: rgb(225, 65, 126);}
     float: left;
 }
 .logo_container h1{
-    color:rgb(203, 136, 248);
+    color: rgb(206, 197, 255);
     height: 100%;
     display: table-cell;
     vertical-align: middle;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-family: roboto;
     font-size: 30px;
     font-weight: 300px;
 }
 .logo_container h1 span{
     font-weight: 800;
-    font-family: cursive;
-    color:rgb(203, 136, 248)
+    font-family: roboto;
+    color: rgb(206, 197, 255)
 }
 .navigation{
     float: right;
@@ -84,7 +84,7 @@ p {color: rgb(225, 65, 126);}
     vertical-align: middle;
     height: 100%;
     color: black;
-    font-family: cursive;
+    font-family: roboto;
     font-size: 15px;
 }
 

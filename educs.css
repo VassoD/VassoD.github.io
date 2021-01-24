@@ -28,7 +28,7 @@ body {background:white;}
   
   /* Active/current link */
   .sidebar a.active {
-    background-color:  rgb(213, 156, 252);
+    background-color:  rgb(206, 197, 255);
     color: white;
   }
   
