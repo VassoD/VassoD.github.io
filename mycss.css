@@ -50,9 +50,18 @@ p {color: rgb(225, 65, 126);}
     height: 100%;
     display: table;
     float: left;
+
+}
+.logo_container img{
+    display:inline-block;
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+    background-color:white;
 }
 .logo_container h1{
-    color: rgb(206, 197, 255);
+    position: relative;
+    color:rgb(206, 197, 255);
     height: 100%;
     display: table-cell;
     vertical-align: middle;
@@ -60,10 +69,18 @@ p {color: rgb(225, 65, 126);}
     font-size: 30px;
     font-weight: 300px;
 }
+
 .logo_container h1 span{
     font-weight: 800;
-    font-family: roboto;
-    color: rgb(206, 197, 255)
+    font-family: monospace;
+    color: rgb(0, 0, 0);
+    letter-spacing: 3px;
+}
+.logo_container img{
+    margin: 15px;
+    width: 70px;
+    height: 70px;
+    background-color:white;
 }
 .navigation{
     float: right;
