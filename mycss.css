@@ -60,7 +60,7 @@ p {color: rgb(225, 65, 126);}
     background-color:white;
 }
 .logo_container h1{
-    color:black;
+    color:rgb(206, 206, 206);
     height: 100%;
     display: table-cell;
     vertical-align: middle;
