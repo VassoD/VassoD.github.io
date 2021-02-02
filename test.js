@@ -1,5 +1,8 @@
 
 /* alert("Salut, c'est un quiz")*/
+$(".www.thinglink.com").click(function(){
+  //your JS here
+});
 function myFunction()
 function vrai(questionNumber) {
     document.getElementById("reponse1" + questionNumber).innerHTML = "vrai";
