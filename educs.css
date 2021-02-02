@@ -63,3 +63,7 @@ body {background:white;}
       float: none;
     }
   }
+  div.embed video {
+    width:  200px;
+    height: 100px;
+  }
