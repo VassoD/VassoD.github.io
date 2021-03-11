@@ -1,17 +1,4 @@
- /* #wrapper>*{
-        padding: 20px;
-        font-size: 20px;
-        border: 20px solid rgba(136, 135, 209, 0.5)
-    }
-            
-#wrapper header, #wrapper footer{
-    background-color: blue;
-    color: red;
-}
-body {background: blueviolet no-repeat 50%
-    url(https://images.unsplash.com/photo-1492136344046-866c85e0bf04?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1945&q=80
-    )}
-h1 {
+/*h1 {
     font-family: Arial, Helvetica, sans-serif;
     color: red;
     background-color: rgb(255, 249, 249);
@@ -32,18 +19,12 @@ p {color: rgb(225, 65, 126);}
 .header{
     width: 100%;
     height: 101px;
-    display: block;
     background-color:rgb(206, 206, 206);
 }
 .inner_header{
     width: 80%;
     height: 100%;
-    display: block;
     margin: 0 auto;
-    background-color: white;
-    outline-width: 20%;
-    outline-color:  black;
-    outline-style: auto
     ;
 }
 .logo_container{
@@ -57,10 +38,9 @@ p {color: rgb(225, 65, 126);}
     vertical-align: middle;
     width: 70px;
     height: 70px;
-    background-color:white;
 }
 .logo_container h1{
-    color:rgb(206, 206, 206);
+    color: white;
     height: 100%;
     display: table-cell;
     vertical-align: middle;
@@ -79,7 +59,6 @@ p {color: rgb(225, 65, 126);}
     margin: 15px;
     width: 70px;
     height: 70px;
-    background-color:white;
 }
 .navigation{
     float: right;

@@ -7,12 +7,23 @@ body {background:white;}
     font-weight: 300px;
 }
 .page-body h3{
-  color:rgb(185, 145, 145);;
+  color:rgb(185, 145, 145);
 }
-.button.link {
-   background:white;
-   background-image: url(thinglink.jpg);
-   border:none; 
+.page-body h6{
+  color: black;
+}
+
+.page-body button{
+  font-size: 100px; 
+  color: rgb(255, 255, 255); 
+  background: white no-repeat 0% 0%; 
+  width: 200px; 
+  height: 200px; 
+  border-radius: 10px; 
+  border-style: none;
+  block-size: 200px;
+  background-size: 100%;
+  cursor: pointer;
   }
 /* The side navigation menu */
 .sidebar {
@@ -20,6 +31,7 @@ body {background:white;}
     padding: 0;
     width: 300px;
     background-color: #ffffff;
+    opacity: 0.5;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -74,3 +86,12 @@ body {background:white;}
     width:  200px;
     height: 100px;
   }
+.tools {
+color: rgb(88, 45, 45);
+text-align: center;
+font: size 2px;
+font-size: 16px !important ;}
+.links {
+  color: blueviolet;
+  font-size: 15px;
+}
