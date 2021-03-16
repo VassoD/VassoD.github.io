@@ -5,8 +5,10 @@
     <meta charset= "utf-8">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel= "stylesheet" type="text/css" href="css/mycss.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
         <!--  Title -->
 <body>
     <div class="header"> 
@@ -17,19 +19,19 @@
 
             <!--<img src="VD2 copy62.jpg" alt="vd" />-->
             </div>
+            <div class="navigation" id="myTopnav">
+                <a class= "active" href="index.html">HOME</a>
+                <a href="aboutme.html">ABOUT ME</a>
+                <a href="edu.tools.html">EDU.TOOLS</a>
+                <a href="#contactme">CONTACT ME</a>
 
-            <ul class="navigation">
-                <a class= "active" href="index.html"><li>HOME</li></a>
-                <a href="aboutme.html"><li>ABOUT ME</li></a>
-                <a href="edu.tools.html"><li>EDU.TOOLS</li></a>
-                <a href="#contactme"><li>CONTACT ME</li></a>
-              <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>-->
-                  </a>
-            </ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+        </div>
         </div>
     </div>
-    
+
+
 
 
 </body>   
@@ -48,7 +50,7 @@ Athens (Acropolis)
 <!--<img src="images/IMG_20210128_155739.jpg" alt="imageacropolis">-->
 
 
-</body>
+
 
 <footer>
     <!-- <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
@@ -58,5 +60,17 @@ Athens (Acropolis)
         </span>
 
 </footer>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "navigation") {
+    x.className += " responsive";
+  } else {
+    x.className = "navigation";
+  }
+}
+
+</script>
+</body>
 </html>
 
