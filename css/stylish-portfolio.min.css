@@ -10,13 +10,13 @@ body {
 }
 
 i{
-  color: #9a8d8d;
+  color: #fff;
 }
 .btn-xl {
   padding: 1rem 2rem;
   margin: 1rem;
   border-radius: 20px;
-  }
+}
 
 .content-section {
   padding-top: 8.5rem;
@@ -155,7 +155,7 @@ animation:typing 4s steps(22,end) forwards,
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #e9cae9;
+  background: #e2d1d1;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -358,23 +358,20 @@ footer.footer .social-link:hover {
   text-decoration: none;
 }
 
-a {
-  color: #1D809F;
-}
-
-a:hover, a:focus, a:active {
-  color: #155d74;
-}
 
 .btn-primary {
   background-color: #e4adad !important;
   color: #fff !important;
   font-size: 12px !important;
-  font-weight:300 !important
+  font-weight:300 !important;
+  border-color: white !important;
+  border: 5px;
+
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background-color: #665562 !important;
+  
 }
 
 .btn-secondary {
