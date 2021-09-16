@@ -9,9 +9,13 @@ body {
   font-family: 'Maven Pro',sans-serif !important; 
 }
 
+i{
+  color: #9a8d8d;
+}
 .btn-xl {
-  padding: 0.5rem 0.5rem;
+  padding: 1rem 2rem;
   margin: 1rem;
+  border-radius: 20px;
   }
 
 .content-section {
@@ -233,7 +237,7 @@ a{
 
 .service-icon {
   background-color: #fff;
-  color: #d1aed7;
+  color: #8d8484;
   height: 7rem;
   width: 7rem;
   display: block;
@@ -321,7 +325,7 @@ a{
     clip-path: inset(2rem);
   }
   .portfolio-item:hover .caption {
-    background-color: #d1aed7;
+    background-color: #8d8484;
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
@@ -343,14 +347,14 @@ footer.footer .social-link {
   height: 4rem;
   width: 4rem;
   line-height: 4.3rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   background-color: hsl(0, 26%, 69%);
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 footer.footer .social-link:hover {
-  background-color: #155d74;
+  background-color: #8d8484;
   text-decoration: none;
 }
 
@@ -364,15 +368,13 @@ a:hover, a:focus, a:active {
 
 .btn-primary {
   background-color: #e4adad !important;
-  border-color: #665562 !important;
   color: #fff !important;
-  font-size: 10px !important;
+  font-size: 12px !important;
   font-weight:300 !important
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background-color: #665562 !important;
-  border-color: #e4adad !important;
 }
 
 .btn-secondary {
@@ -396,11 +398,11 @@ a:hover, a:focus, a:active {
 }
 
 .bg-primary {
-  background-color: #d1aed7 !important;
+  background-color: #e4adad  !important;
 }
 
 .text-primary {
-  color:#d1aed7 !important;
+  color:#e4adad  !important;
 }
 
 .text-secondary {
