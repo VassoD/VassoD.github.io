@@ -67,6 +67,178 @@ h6 {
   pointer-events: none;
 }
 
+.div-of-draw{
+  /* girl_laptop */
+
+position: absolute;
+width: 313.54px;
+height: 432.84px;
+left: 152px;
+top: 84px;
+
+
+
+/* woman */
+
+position: absolute;
+width: 313.54px;
+height: 432.84px;
+left: 152px;
+top: 84px;
+
+
+
+/* Oval */
+
+position: absolute;
+width: 73px;
+height: 137px;
+left: 269px;
+top: 100px;
+
+background: #FFFFFF;
+
+
+/* Group */
+
+position: absolute;
+width: 123.95px;
+height: 61.94px;
+left: 255.23px;
+top: 454.9px;
+
+
+
+/* Path */
+
+position: absolute;
+width: 61.99px;
+height: 38.89px;
+left: 317.19px;
+top: 477.95px;
+
+background: #151515;
+
+
+/* Path */
+
+position: absolute;
+width: 52.46px;
+height: 58.33px;
+left: 255.23px;
+top: 454.9px;
+
+background: #151515;
+
+
+/* Path */
+
+position: absolute;
+width: 313.54px;
+height: 90.58px;
+left: 152px;
+top: 409.75px;
+
+background: #FFFFFF;
+border: 1px solid #151515;
+
+
+/* Path */
+
+position: absolute;
+width: 266.12px;
+height: 199.75px;
+left: 183.87px;
+top: 214.95px;
+
+background: #FFFFFF;
+border: 1px solid #151515;
+
+
+/* Path */
+
+position: absolute;
+width: 149.92px;
+height: 235.58px;
+left: 237.19px;
+top: 84px;
+
+background: #000000;
+
+
+/* Path */
+
+position: absolute;
+width: 113.6px;
+height: 22.98px;
+left: 242.29px;
+top: 442.2px;
+
+background: #000000;
+mix-blend-mode: normal;
+opacity: 0.07;
+
+
+/* Path */
+
+position: absolute;
+width: 19.65px;
+height: 24.77px;
+left: 305.59px;
+top: 178.8px;
+
+background: #000000;
+mix-blend-mode: normal;
+opacity: 0.07;
+
+
+/* Path */
+
+position: absolute;
+width: 39.84px;
+height: 104.8px;
+left: 249.55px;
+top: 237.45px;
+
+background: #000000;
+mix-blend-mode: normal;
+opacity: 0.07;
+
+
+/* laptop */
+
+position: absolute;
+width: 176.7px;
+height: 100.27px;
+left: 215.29px;
+top: 342.33px;
+
+
+
+/* Path */
+
+position: absolute;
+width: 176.7px;
+height: 100.27px;
+left: 215.29px;
+top: 342.33px;
+
+background: #EDEDED;
+border: 1px solid #151515;
+
+
+/* Oval */
+
+position: absolute;
+width: 13.4px;
+height: 13.4px;
+left: 297.59px;
+top: 385.8px;
+
+background: #FFFFFF;
+
+}
+
 .scroll-to-top {
   position: fixed;
   right: 15px;
