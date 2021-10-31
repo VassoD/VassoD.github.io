@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
 body,
 html {
   width: 100%;
@@ -6,17 +7,18 @@ html {
 }
 
 body {
-  font-family: 'Maven Pro',sans-serif !important; 
+  font-family: 'Maven Pro', sans-serif !important;
 }
 
-i{
+i {
   color: #fff;
 }
+
 .btn-xl {
   padding: 1rem 2rem;
   margin: 5px;
   border-radius: 20px;
-  
+
 }
 
 .content-section {
@@ -32,7 +34,9 @@ i{
   font-size: 1rem;
   text-transform: uppercase;
 }
-h1,h2{
+
+h1,
+h2 {
   color: #5c5757;
 }
 
@@ -50,6 +54,7 @@ h6 {
   height: 400px;
   width: 800px;
 }
+
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
 }
@@ -83,7 +88,8 @@ h6 {
   line-height: 45px;
 }
 
-.scroll-to-top:focus, .scroll-to-top:hover {
+.scroll-to-top:focus,
+.scroll-to-top:hover {
   color: white;
 }
 
@@ -110,49 +116,60 @@ h6 {
 }
 
 .text-typing {
-padding:20px 30px;
-background:#f5f5f5;
-font-size:20px;
-font-family:monospace;
-border-radius:50px;
-margin: 30px auto 0 auto;
+  padding: 20px 30px;
+  background: #f5f5f5;
+  font-size: 20px;
+  font-family: monospace;
+  border-radius: 50px;
+  margin: 30px auto 0 auto;
 }
+
 .text-typing p {
-margin:0px;
-white-space:nowrap;
-overflow:hidden;
-width: 80%;
-animation:typing 4s steps(22,end) forwards,
-          blink 1s infinite;
+  margin: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 80%;
+  animation: typing 4s steps(22, end) forwards,
+    blink 1s infinite;
 }
+
 @keyframes typing {
-0% { width:0% }
-100% { width:100% }
+  0% {
+    width: 0%
+  }
+
+  100% {
+    width: 100%
+  }
 }
+
 @keyframes blink {
-0%,100% {
-  border-right:2px solid transparent;
-}
-50% {
-  border-right:2px solid #222;
-}
+
+  0%,
+  100% {
+    border-right: 2px solid transparent;
+  }
+
+  50% {
+    border-right: 2px solid #222;
+  }
 }
 
 
 @media (max-width: 492px) {
   .text-typing {
-    padding:20px 30px;
-    background:#f5f5f5;
-    font-size:9px;
-    font-family:monospace;
+    padding: 20px 30px;
+    background: #f5f5f5;
+    font-size: 9px;
+    font-family: monospace;
     margin: 10px auto 0 auto;
-    }
-    
-.masthead h1 {
-  font-size: 1.5rem !important;
-  margin: 0;
-  padding: 0;
-}
+  }
+
+  .masthead h1 {
+    font-size: 1.5rem !important;
+    margin: 0;
+    padding: 0;
+  }
 
 
 }
@@ -168,6 +185,7 @@ animation:typing 4s steps(22,end) forwards,
   .masthead {
     height: 100vh;
   }
+
   .masthead h1 {
     font-size: 2.5rem;
   }
@@ -193,11 +211,13 @@ animation:typing 4s steps(22,end) forwards,
   margin: 0;
   padding: 0;
   list-style: none;
-  
+
 }
-a{
+
+a {
   font-family: 'Maven Pro' !important;
 }
+
 .sidebar-nav li.sidebar-nav-item a {
   display: block;
   text-decoration: none;
@@ -216,7 +236,7 @@ a{
   text-decoration: none;
 }
 
-.sidebar-nav > .sidebar-brand {
+.sidebar-nav>.sidebar-brand {
   font-size: 1.2rem;
   background: rgba(52, 58, 64, 0.1);
   height: 80px;
@@ -226,11 +246,11 @@ a{
   padding-left: 15px;
 }
 
-.sidebar-nav > .sidebar-brand a {
+.sidebar-nav>.sidebar-brand a {
   color: #fff;
 }
 
-.sidebar-nav > .sidebar-brand a:hover {
+.sidebar-nav>.sidebar-brand a:hover {
   color: #fff;
   background: none;
 }
@@ -254,7 +274,8 @@ a{
   z-index: 999;
 }
 
-.menu-toggle:focus, .menu-toggle:hover {
+.menu-toggle:focus,
+.menu-toggle:hover {
   color: #fff;
 }
 
@@ -327,6 +348,7 @@ a{
     max-width: none;
     margin: 0;
   }
+
   .portfolio-item .caption {
     transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
     transition: clip-path 0.25s ease-out, background-color 0.7s;
@@ -334,12 +356,14 @@ a{
     -webkit-clip-path: inset(0px);
     clip-path: inset(0px);
   }
+
   .portfolio-item .caption .caption-content {
     transition: opacity 0.25s;
     margin-left: 5rem;
     margin-right: 5rem;
     margin-bottom: 5rem;
   }
+
   .portfolio-item img {
     transition: -webkit-clip-path 0.25s ease-out;
     transition: clip-path 0.25s ease-out;
@@ -347,10 +371,12 @@ a{
     -webkit-clip-path: inset(-1px);
     clip-path: inset(-1px);
   }
+
   .portfolio-item:hover img {
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
+
   .portfolio-item:hover .caption {
     background-color: #8d8484;
     -webkit-clip-path: inset(2rem);
@@ -390,7 +416,7 @@ footer.footer .social-link:hover {
   background-color: #e4adad !important;
   color: #fff !important;
   font-size: 14px !important;
-  font-weight:300 !important;
+  font-weight: 300 !important;
   border-color: white !important;
   border: 5px;
   padding: auto 0px !important;
@@ -398,9 +424,11 @@ footer.footer .social-link:hover {
 
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
   background-color: #665562 !important;
-  
+
 }
 
 /* .btn-secondary {
@@ -416,12 +444,12 @@ footer.footer .social-link:hover {
 
 .btn-dark {
   color: #fff !important;
-  background-color: #665562 !important ;
+  background-color: #665562 !important;
   border: none !important;
 }
 
 .btn-dark:hover {
-  background-color: #e4adad  !important;
+  background-color: #e4adad !important;
 }
 
 .btn {
@@ -430,17 +458,17 @@ footer.footer .social-link:hover {
 }
 
 .bg-primary {
-  background-color: #e4adad  !important;
+  background-color: #e4adad !important;
 }
 
 .text-primary {
-  color:#e4adad  !important;
+  color: #e4adad !important;
 }
 
-.lighter{
+.lighter {
   color: #5c5757;
 }
 
-.content-section h2{
+.content-section h2 {
   color: #5c5757;
 }
