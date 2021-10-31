@@ -15,7 +15,7 @@ i {
 }
 
 .btn-xl {
-  padding: 1rem 2rem;
+  padding: 1rem 1.2rem;
   margin: 5px;
   border-radius: 20px;
 
@@ -121,7 +121,7 @@ h6 {
   font-size: 20px;
   font-family: monospace;
   border-radius: 50px;
-  margin: 30px auto 0 auto;
+  margin: 20px 10% 5px 10%;
 }
 
 .text-typing p {
@@ -155,24 +155,6 @@ h6 {
   }
 }
 
-
-@media (max-width: 492px) {
-  .text-typing {
-    padding: 20px 30px;
-    background: #f5f5f5;
-    font-size: 9px;
-    font-family: monospace;
-    margin: 10px auto 0 auto;
-  }
-
-  .masthead h1 {
-    font-size: 1.5rem !important;
-    margin: 0;
-    padding: 0;
-  }
-
-
-}
 
 
 .masthead h1 {
@@ -415,7 +397,7 @@ footer.footer .social-link:hover {
 .btn-primary {
   background-color: #e4adad !important;
   color: #fff !important;
-  font-size: 14px !important;
+  font-size: 16px !important;
   font-weight: 300 !important;
   border-color: white !important;
   border: 5px;
@@ -457,9 +439,6 @@ footer.footer .social-link:hover {
   font-weight: 700;
 }
 
-.bg-primary {
-  background-color: #e4adad !important;
-}
 
 .text-primary {
   color: #e4adad !important;
@@ -471,4 +450,35 @@ footer.footer .social-link:hover {
 
 .content-section h2 {
   color: #5c5757;
+}
+
+.name{
+  font-size: 30px;
+}
+
+
+@media (max-width: 480px) {
+  .text-typing {
+    padding: 20px 10px;
+    font-size: 9px;
+    margin: 10px auto 0 auto;
+    letter-spacing: -0.4px;
+    
+  }
+
+  .masthead h1 {
+    font-size: 1.5rem !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  .name{
+    font-size: 16px !important;
+  }
+
+  .btn-primary {
+    font-size: 12px !important;
+  }
+
+  
 }
