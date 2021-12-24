@@ -590,7 +590,12 @@ footer.footer .social-link:hover {
 
 .nightmode {
   position: absolute;
-  margin-left: 10px;
+  margin-left: 12px;
+  margin-top: 5px;
+}
+
+.nightmode:hover{
+  cursor: pointer;
 }
 
 .dark {
