@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap'); */
 
 body,
 html {
@@ -17,7 +17,7 @@ i {
 .btn-xl {
   padding: 1rem 1.2rem;
   margin: 5px;
-  border-radius: 20px;
+  border-radius: 10px;
 
 }
 
@@ -32,7 +32,7 @@ i {
 
 .content-section-heading h3 {
   font-size: 1rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 h1,
@@ -52,17 +52,14 @@ h6 {
 
 .img-fluid {
   height: 400px;
-  width: 800px;
+  width: 400px;
+
 }
 
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Map */
-.map {
-  height: 30rem;
-}
 
 @media (max-width: 992px) {
   .map {
@@ -163,15 +160,6 @@ h6 {
   padding: 0;
 }
 
-@media (min-width: 992px) {
-  .masthead {
-    height: 100vh;
-  }
-
-  .masthead h1 {
-    font-size: 2.5rem;
-  }
-}
 
 /* Side Menu */
 #sidebar-wrapper {
@@ -325,6 +313,10 @@ a {
   font-size: 1.2rem;
 }
 
+.portfolio-item .caption .caption-content h4 {
+  font-size: 14px !important;
+}
+
 @media (min-width: 992px) {
   .portfolio-item {
     max-width: none;
@@ -383,7 +375,7 @@ footer.footer .social-link {
   width: 4rem;
   line-height: 4.3rem;
   font-size: 1.8rem;
-  background-color: hsl(0, 26%, 69%);
+  background-color: #665562;
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
@@ -395,7 +387,7 @@ footer.footer .social-link:hover {
 
 
 .btn-primary {
-  background-color: #e4adad !important;
+  background-color: #665562 !important;
   color: #fff !important;
   font-size: 16px !important;
   font-weight: 300 !important;
@@ -409,20 +401,10 @@ footer.footer .social-link:hover {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  background-color: #665562 !important;
+  background-color: #e4adad !important;
 
 }
 
-/* .btn-secondary {
-  background-color: #ecb807 !important;
-  border-color: #ecb807 !important;
-  color: #fff !important;
-}
-
-.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
-  background-color: #ba9106 !important;
-  border-color: #ba9106 !important;
-} */
 
 .btn-dark {
   color: #fff !important;
@@ -452,10 +434,92 @@ footer.footer .social-link:hover {
   color: #5c5757;
 }
 
-.name{
+.name {
   font-size: 30px;
 }
 
+
+
+#timelinediv {
+  width: 100%;
+  margin: 0 auto;
+  padding: 65px;
+  display: grid;
+  grid-template-columns: 1fr 3px 1fr;
+}
+
+#timelinediv a {
+  color: #8d8484;
+}
+
+.timeline__component {
+  margin: 0 20px 20px 20px;
+}
+
+.timeline__component--bg {
+  padding: 1.5em;
+  background: #d2d3d4;
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
+  border-radius: 5px;
+}
+
+.timeline__component--bottom {
+  margin-bottom: 0;
+}
+
+.timeline__middle {
+  position: relative;
+  background: #665562;
+}
+
+.timeline__point {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  background: #665562;
+  border-radius: 50%;
+}
+
+.timeline__point--bottom {
+  top: initial;
+  bottom: 0;
+}
+
+.timeline__date--right {
+  text-align: right;
+}
+
+.timeline__title {
+  margin: 0;
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+.timeline__paragraph {
+  line-height: 1.5;
+  color: #fff;
+}
+
+.timeline__point--bottom {
+  top: initial;
+  bottom: -1em;
+}
+
+
+/*________________________________@MEDIA______________________*/
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+  }
+
+  .masthead h1 {
+    font-size: 2.5rem;
+  }
+}
 
 @media (max-width: 480px) {
   .text-typing {
@@ -463,7 +527,7 @@ footer.footer .social-link:hover {
     font-size: 9px;
     margin: 10px auto 0 auto;
     letter-spacing: -0.4px;
-    
+
   }
 
   .masthead h1 {
@@ -472,13 +536,106 @@ footer.footer .social-link:hover {
     padding: 0;
   }
 
-  .name{
+  .name {
     font-size: 16px !important;
   }
 
   .btn-primary {
     font-size: 12px !important;
   }
+}
 
-  
+@media screen and (max-width:865px) {
+
+  #timeline {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  #timelinediv {
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .timeline__component {
+    margin: 15px 0;
+  }
+
+  .timeline__component--bg {
+    padding: 1.5em;
+    border-radius: 0px;
+  }
+
+  .timeline__point {
+    transform: translate(-50%, -50%);
+  }
+
+  .timeline__date--right {
+    position: relative;
+    top: -1.5em;
+    text-align: right;
+    padding-right: 1.5em;
+  }
+
+  .timeline__date {
+    position: relative;
+    top: -1.5em;
+    padding-left: 1.5em;
+  }
+}
+
+.nightmode {
+  position: absolute;
+  margin-left: 10px;
+}
+
+.dark {
+  background-color: black;
+  color: rgb(141, 141, 141);
+}
+
+.sun,
+.moon {
+  font-size: 2rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+.moon {
+  position: absolute;
+  inset: 0;
+}
+
+.moon-logo {
+  opacity: 0;
+  transform: translateY(20%) rotateZ(50deg);
+  transition: all 1s ease-out;
+}
+
+.sun-logo {
+  opacity: 1;
+  transform: translateY(0) rotateZ(0deg);
+  transition: all 1s ease-out;
+}
+
+.animate-sun {
+  opacity: 0;
+  transform: translateY(20%) rotateZ(100deg);
+}
+
+.animate-moon {
+  opacity: 1;
+  transform: translateY(0%) rotateZ(0deg);
+}
+
+.animate-moon path {
+  fill: white;
+}
+
+.animate-sun path {
+  fill: white;
 }
