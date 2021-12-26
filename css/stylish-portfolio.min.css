@@ -523,10 +523,10 @@ footer.footer .social-link:hover {
 
 @media (max-width: 480px) {
   .text-typing {
-    padding: 20px 10px;
+    padding: 20px 5px;
     font-size: 9px;
     margin: 10px auto 0 auto;
-    letter-spacing: -0.4px;
+    letter-spacing: -0.1px;
 
   }
 
@@ -793,4 +793,24 @@ footer.footer .social-link:hover {
   left: 65%;
   -webkit-animation-delay: 4s, 2.5s;
   animation-delay: 4s, 2.5s
+}
+
+
+.wavehand {
+  animation-name: wave-animation; 
+  animation-duration: 2.5s;        
+  transform-origin: 70% 70%;      
+  animation-iteration-count: 2;
+  display: inline-block;  
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
 }
