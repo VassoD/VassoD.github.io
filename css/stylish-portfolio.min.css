@@ -443,7 +443,7 @@ footer.footer .social-link:hover {
 #timelinediv {
   width: 100%;
   margin: 0 auto;
-  padding: 65px;
+  padding: 15px;
   display: grid;
   grid-template-columns: 1fr 3px 1fr;
 }
@@ -460,7 +460,7 @@ footer.footer .social-link:hover {
   padding: 1.5em;
   background: #a8a7a7;
   /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .timeline__component--bottom {
