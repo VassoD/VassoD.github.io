@@ -14,6 +14,13 @@ i {
   color: #fff;
 }
 
+h3 a {
+  color: #5c5757;
+}
+h3 a:hover{
+  color: #8d8484;
+}
+
 .btn-xl {
   padding: 1rem 1.2rem;
   margin: 5px;
