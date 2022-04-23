@@ -100,11 +100,11 @@
 
   <header class="masthead d-flex">
     <div class="nightmode">
+      <div class="moon moon-logo">
+        <i class="fas fa-moon" style="color:#665562 !important"></i>
+      </div>
       <div class="sun sun-logo">
         <i class="fas fa-sun"></i>
-      </div>
-      <div class="moon moon-logo">
-        <i class="fas fa-moon"></i>
       </div>
     </div>
     <div class="container text-center my-auto">
@@ -582,8 +582,8 @@
 
   <script>
     document.querySelector(".nightmode").addEventListener("click", () => {
-      document.querySelector(".sun-logo").classList.toggle("animate-sun");
       document.querySelector(".moon-logo").classList.toggle("animate-moon");
+      document.querySelector(".sun-logo").classList.toggle("animate-sun");
       document.querySelector("body").classList.toggle("dark");
     })
   </script>
