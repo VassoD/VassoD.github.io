@@ -508,6 +508,7 @@ footer.footer .social-link:hover {
 .timeline__paragraph {
   line-height: 1.5;
   color: #fff;
+  margin-top: 0.5rem;
 }
 
 .timeline__point--bottom {
