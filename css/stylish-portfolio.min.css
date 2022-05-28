@@ -59,7 +59,7 @@ h6 {
 
 .img-fluid {
   height: 400px;
-  width: 400px;
+  width: 800px;
 
 }
 
@@ -352,7 +352,6 @@ a {
     -webkit-clip-path: inset(-1px);
     clip-path: inset(-1px);
   }
-
   .portfolio-item:hover img {
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
@@ -821,4 +820,8 @@ footer.footer .social-link:hover {
    50% { transform: rotate(10.0deg) }
    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
   100% { transform: rotate( 0.0deg) }
+}
+
+.caption-content p{
+  font-size: 14px !important;
 }
