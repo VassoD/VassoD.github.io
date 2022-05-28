@@ -60,7 +60,6 @@ h6 {
 .img-fluid {
   height: 400px;
   width: 800px;
-
 }
 
 .text-faded {
@@ -136,6 +135,7 @@ h6 {
   animation: typing 4s steps(22, end) forwards,
     blink 1s infinite;
 }
+
 
 @keyframes typing {
   0% {
@@ -550,7 +550,12 @@ footer.footer .social-link:hover {
   .btn-primary {
     font-size: 12px !important;
   }
+  
+  #uiux{
+    height: auto;
+  }
 }
+
 
 @media screen and (max-width:865px) {
 
