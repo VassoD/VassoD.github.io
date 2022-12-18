@@ -53,7 +53,7 @@ h3 a:hover {
 
 h1,
 h2 {
-  color: #a8a7a7 
+  color: #a8a7a7
 }
 
 h1,
@@ -113,7 +113,7 @@ h6 {
 }
 
 #about {
-  margin-top: 160px;
+  margin-top: 15%;
   position: relative;
   display: table;
   width: 100%;
@@ -451,14 +451,17 @@ footer.footer .social-link:hover {
   font-size: 30px;
 }
 
+.timeline__title {
+  color: #665562;
+}
 
 
 #timelinediv {
   width: 100%;
   margin: 0 auto;
-  padding: 15px;
   display: grid;
   grid-template-columns: 1fr 3px 1fr;
+  padding: 50px;
 }
 
 #timelinediv a {
@@ -471,9 +474,10 @@ footer.footer .social-link:hover {
 
 .timeline__component--bg {
   padding: 1.5em;
-  background: #a8a7a7;
   /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
   border-radius: 15px;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.05), 0 1px 0 0 rgba(0, 0, 0, 0.05);
+
 }
 
 .timeline__component--bottom {
@@ -513,7 +517,7 @@ footer.footer .social-link:hover {
 
 .timeline__paragraph {
   line-height: 1.5;
-  color: #fff;
+  color: #5c5757;
   margin-top: 0.5rem;
 }
 
@@ -884,11 +888,29 @@ body {
   padding: 0;
 }
 
+/* 
+html, body { height: 100% }
+
+body {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+} */
+/* 
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
+} */
+
+/*________The Particles__________ */
 .background {
-  position:absolute;
+  position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
-  z-index: -2;
-  background-color: #222;
-  
+  right: 0;
+  z-index: -1;
 }
