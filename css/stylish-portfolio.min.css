@@ -393,7 +393,6 @@ footer.footer .social-link {
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
-}
 
 footer.footer .social-link:hover {
   background-color: #8d8484;
@@ -873,7 +872,7 @@ footer.footer .social-link:hover {
 .timeline__title a {
   color: #5c5757;
 }
-#5c5757; #8d8484;
+
 .timeline__title a:hover {
   color: #8d8484;
 }
