@@ -1,5 +1,12 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap'); */
 
+/* Colors used: 
+#8d8484;
+#665562;
+#a8a7a7;
+#5c5757;
+#343a40; as hover */
+
 body,
 html {
   width: 100%;
@@ -46,9 +53,8 @@ h3 a:hover {
 
 h1,
 h2 {
-  color: #5c5757;
+  color: #a8a7a7 
 }
-
 
 h1,
 h2,
@@ -106,18 +112,17 @@ h6 {
   font-weight: 800;
 }
 
-.masthead {
-  min-height: 30rem;
+#about {
+  margin-top: 160px;
   position: relative;
   display: table;
   width: 100%;
-  height: auto;
-  padding-top: 0;
-  padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 80%), url("../img/UI.png");
+  height: 100%;
+  /* background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 80%), url("../img/UI.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  z-index: 1;
 }
 
 .text-typing {
@@ -179,7 +184,7 @@ h6 {
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #e2d1d1;
+  background: #a8a7a7;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -388,6 +393,7 @@ footer.footer .social-link {
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
+}
 
 footer.footer .social-link:hover {
   background-color: #8d8484;
@@ -410,10 +416,9 @@ footer.footer .social-link:hover {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  background-color: #e4adad !important;
+  background-color: #a8a7a7 !important;
 
 }
-
 
 .btn-dark {
   color: #fff !important;
@@ -422,7 +427,7 @@ footer.footer .social-link:hover {
 }
 
 .btn-dark:hover {
-  background-color: #e4adad !important;
+  background-color: #a8a7a7 !important;
 }
 
 .btn {
@@ -432,7 +437,7 @@ footer.footer .social-link:hover {
 
 
 .text-primary {
-  color: #e4adad !important;
+  color: #a8a7a7 !important;
 }
 
 .lighter {
@@ -868,7 +873,23 @@ footer.footer .social-link:hover {
 .timeline__title a {
   color: #5c5757;
 }
-
+#5c5757; #8d8484;
 .timeline__title a:hover {
   color: #8d8484;
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  background-color: #222;
+  
 }
