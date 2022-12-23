@@ -618,6 +618,7 @@ footer.footer .social-link:hover {
 
 }
 
+/* __________________________________________________ */
 .nightmode {
   position: fixed;
   margin-left: 12px;
@@ -675,7 +676,7 @@ footer.footer .social-link:hover {
   fill: white;
 }
 
-
+/* ___________________________________________________ */
 
 /* customizable snowflake styling */
 .snowflake {
@@ -824,6 +825,7 @@ footer.footer .social-link:hover {
   animation-delay: 4s, 2.5s
 }
 
+/*______________________________________________*/
 
 .wavehand {
   animation-name: wave-animation;
@@ -868,6 +870,8 @@ footer.footer .social-link:hover {
     transform: rotate(0.0deg)
   }
 }
+
+/* _________________________________________ */
 
 .caption-content p {
   font-size: 14px !important;
