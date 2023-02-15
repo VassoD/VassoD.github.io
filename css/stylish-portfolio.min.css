@@ -311,7 +311,7 @@ a {
   top: 0;
   bottom: 0;
   z-index: 1;
-  margin: 1em;
+  margin: 0.5em;
 }
 
 .portfolio-item .caption .caption-content {
