@@ -66,8 +66,8 @@ h6 {
 }
 
 .img-fluid {
-  height: 400px;
-  width: 800px;
+  max-width: 100%;
+  height: auto;
 }
 
 .text-faded {
@@ -297,8 +297,9 @@ a {
   display: block;
   position: relative;
   overflow: hidden;
-  max-width: 430px;
-  margin: auto auto 1rem;
+  max-width: 400px;
+  /* margin: auto auto 1rem; */
+  /* border-radius: 0.5rem; */
 }
 
 .portfolio-item .caption {
@@ -310,6 +311,7 @@ a {
   top: 0;
   bottom: 0;
   z-index: 1;
+  margin: 1em;
 }
 
 .portfolio-item .caption .caption-content {
