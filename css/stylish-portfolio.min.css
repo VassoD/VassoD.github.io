@@ -628,6 +628,7 @@ footer.footer .social-link:hover {
   position: fixed;
   margin-left: 12px;
   margin-top: 5px;
+  z-index: 5;
 }
 
 .nightmode:hover {
