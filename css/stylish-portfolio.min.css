@@ -66,6 +66,8 @@ h6 {
 }
 
 .img-fluid {
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
   max-width: 100%;
   height: auto;
 }
@@ -311,7 +313,6 @@ a {
   top: 0;
   bottom: 0;
   z-index: 1;
-  margin: 0.5em;
 }
 
 .portfolio-item .caption .caption-content {
@@ -534,7 +535,7 @@ footer.footer .social-link:hover {
 }
 
 /*________________________________@MEDIA______________________*/
-
+/* 
 @media (min-width: 992px) {
   .masthead {
     height: 100vh;
@@ -543,7 +544,7 @@ footer.footer .social-link:hover {
   .masthead h1 {
     font-size: 2.5rem;
   }
-}
+} */
 
 @media (max-width: 480px) {
   .text-typing {
@@ -619,7 +620,6 @@ footer.footer .social-link:hover {
   }
   .portfolio-item .caption{
     margin: 0;
-    margin-top: 0.5em;
   }
 }
 
