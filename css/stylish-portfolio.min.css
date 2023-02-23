@@ -1,11 +1,12 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap'); */
 
 /* Colors used: 
-#8d8484;
-#665562;
-#a8a7a7;
-#5c5757;
-#343a40; as hover */
+#605565;
+#A996B2;
+#0A0A0A;
+#fff;
+*/
+
 
 body,
 html {
@@ -22,11 +23,11 @@ body {
 }
 
 h3 a {
-  color: #665562;
+  color: #605565;
 }
 
 h3 a:hover {
-  color: #8d8484;
+  color: #A996B2;
 }
 
 
@@ -53,7 +54,7 @@ h3 a:hover {
 
 h1,
 h2 {
-  color: #665562;
+  color: #605565;
 }
 
 h1,
@@ -97,7 +98,7 @@ h6 {
   height: 50px;
   text-align: center;
   color: white;
-  background: #665562;
+  background: #605565;
   line-height: 45px;
 }
 
@@ -107,7 +108,7 @@ h6 {
 }
 
 .scroll-to-top:hover {
-  background: #343a40;
+  background: #7A6;
 }
 
 .scroll-to-top i {
@@ -186,7 +187,7 @@ h6 {
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #665562;
+  background: #605565;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -214,7 +215,7 @@ a {
 .sidebar-nav li a:hover {
   text-decoration: none;
   color: #fff;
-  background: rgba(255, 255, 255, 0.2);
+  background: #A996B2;
 }
 
 .sidebar-nav li a:active,
@@ -224,7 +225,7 @@ a {
 
 .sidebar-nav>.sidebar-brand {
   font-size: 1.2rem;
-  background: #665562;
+  background: #605565;
   height: 80px;
   line-height: 50px;
   padding-top: 15px;
@@ -255,7 +256,7 @@ a {
   height: 50px;
   text-align: center;
   color: #fff;
-  background: #665562;
+  background: #605565;
   line-height: 50px;
   z-index: 999;
 }
@@ -266,12 +267,12 @@ a {
 }
 
 .menu-toggle:hover {
-  background: #665562;
+  background: #A996B2;
 }
 
 /* .service-icon {
   background-color: #fff;
-  color: #665562;
+  color: #605565;
   height: 7rem;
   width: 7rem;
   display: block;
@@ -308,7 +309,7 @@ a {
   display: flex;
   height: 100%;
   width: 100%;
-  background-color: rgba(33, 37, 41, 0.2);
+  background-color: rgba(96, 85, 101, 0.7);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -369,7 +370,7 @@ a {
   }
 
   .portfolio-item:hover .caption {
-    background-color: #8d8484;
+    background-color: #605565;
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
@@ -392,19 +393,19 @@ footer.footer .social-link {
   width: 4rem;
   line-height: 4.3rem;
   font-size: 1.8rem;
-  background-color: #665562;
+  background-color: #605565;
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 footer.footer .social-link:hover {
-  background-color: #8d8484;
+  background-color: #A996B2;
   text-decoration: none;
 }
 
 
 .btn-primary {
-  background-color: #665562 !important;
+  background-color: #605565 !important;
   color: #fff !important;
   font-size: 16px !important;
   font-weight: 300 !important;
@@ -418,18 +419,18 @@ footer.footer .social-link:hover {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  background-color: #a8a7a7 !important;
+  background-color: #A996B2 !important;
 
 }
 
 .btn-dark {
   color: #fff !important;
-  background-color: #665562 !important;
+  background-color: #605565 !important;
   border: none !important;
 }
 
 .btn-dark:hover {
-  background-color: #a8a7a7 !important;
+  background-color: #A996B2 !important;
 }
 
 .btn {
@@ -439,15 +440,15 @@ footer.footer .social-link:hover {
 
 
 .text-primary {
-  color: #665562 !important;
+  color: #605565 !important;
 }
 
 .lighter {
-  color: #5c5757;
+  color: #A996B2;
 }
 
 .content-section h2 {
-  color: #665562;
+  color: #605565;
 }
 
 .name {
@@ -455,7 +456,7 @@ footer.footer .social-link:hover {
 }
 
 .timeline__title {
-  color: #665562;
+  color: #605565;
 }
 
 
@@ -468,7 +469,7 @@ footer.footer .social-link:hover {
 }
 
 #timelinediv a {
-  color: #8d8484;
+  color: #A996B2;
 }
 
 .timeline__component {
@@ -489,7 +490,7 @@ footer.footer .social-link:hover {
 
 .timeline__middle {
   position: relative;
-  background: #665562;
+  background: #605565;
 }
 
 .timeline__point {
@@ -499,7 +500,7 @@ footer.footer .social-link:hover {
   transform: translateX(-50%);
   width: 15px;
   height: 15px;
-  background: #665562;
+  background: #605565;
   border-radius: 50%;
 }
 
@@ -520,7 +521,7 @@ footer.footer .social-link:hover {
 
 .timeline__paragraph {
   line-height: 1.5;
-  color: #5c5757;
+  color: #605565;
   margin-top: 0.5rem;
 }
 
@@ -631,13 +632,14 @@ footer.footer .social-link:hover {
   z-index: 5;
 }
 
+
+
 .nightmode:hover {
   cursor: pointer;
 }
 
 .dark {
-  background-color: black;
-  color: rgb(141, 141, 141);
+  background-color: #0A0A0A;
 }
 
 .sun,
@@ -884,11 +886,11 @@ footer.footer .social-link:hover {
 }
 
 .timeline__title a {
-  color: #665562;
+  color: #605565;
 }
 
 .timeline__title a:hover {
-  color: #8d8484;
+  color: #A996B2;
 }
 
 
