@@ -30,6 +30,14 @@ h3 {
   font-size: 20px !important;
 }
 
+p a{
+  color: #A996B2;
+}
+
+p a:hover{
+  color: #605565;
+}
+
 h4 {
   font-size: 16px !important;
 }

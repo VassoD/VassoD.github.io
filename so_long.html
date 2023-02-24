@@ -176,9 +176,8 @@
             "collectible counter" that displays the number of objects the player has collected so far.
           </p>
           <p class="text-primary mb-3">
-            To achieve this logic, the code uses various functions to check if the player is colliding with walls or
-            obstacles, and to update the player's position and collectible count when the player moves. I also used
-            flood fill algorithm to check if there is a path between the player and the exit (backtracking).
+            To achieve this logic, the code uses various functions to check and to update the player's position and collectible count and steps count when the player moves. I also used
+            <a href="https://en.wikipedia.org/wiki/Flood_fill">flood fill algorithm</a> to check if there is a path between the player and the exit (backtracking).
             The player must navigate the map to collect all the objects and reach the exit tile while trying to use
             the least possible number of steps.
           </p>
@@ -187,31 +186,48 @@
             areas, including:
             <br>
             <b>
-            Programming logic:</b> I had to come up with an algorithm to move the player character through the game
-            board while avoiding obstacles and collecting items, with the goal of reaching the exit. This required
-            logical thinking and problem-solving skills.
+              Programming logic:</b> I had to come up with an algorithm to move the player character through the game
+            board. This required logical thinking and problem-solving skills.
             <br>
             <b>Memory management:</b>
-            I had to allocate and deallocate memory for various data structures, such as the map
-            and the player's inventory.
+            I had to allocate and free memory for various data structures, in order to avoid memory leaks.
+            I used calloc in order to do this because calloc allocates memory and sets it to zero. That's why
+            for this case was better option than malloc. Because malloc doesn't set the memory to zero, so if
+            you use malloc and then you use the memory without setting it to zero, you might get some unexpected
+            results.
             <br>
             <b>Input/output:</b>
             I had to read in the game map from a file and display it on the screen, as well as accept
-            user input to move the player.
+            user input to move the player. I used the get_next_line function to read the map file.
+            And regarding the moves I used the key_press function to move the player.
             <br>
             <b>Graphics programming:</b>
             I used the Minilibx library to create the game window and display images of the
             player, walls, collectibles, and exit.
+            Regarding the graphics I had to convert the files I created in photoshop into .xpm type files.<br>
+            for the 0s in the map file. The space where the player can move.<br>
+            <img class="game-imgs" src="img/sandt.jpg" alt="ground">
+            <br>
+            for the 1s in the map file. The wall where the player can't go.<br>
+            <img class="game-imgs" src="img/trooper.jpg" alt="wall">
+            <br>
+            for the E in the map file. The exit where the player has to go.<br>
+            <img class="game-imgs" src="img/mando.jpg" alt="exit"><br>
+            for the C in the map file. The collectible that the player has to collect.<br>
+            <img class="game-imgs" src="img/frogcol.jpg" alt="collectible">
+            <br>
+            and finally for the P in the map file. The player.<br>
+            <img class="game-imgs" src="img/babyyoda1.jpg" alt="player">
             <br>
             <b>Error handling:</b> I had to anticipate and handle errors that might arise during the game, such as
             invalid
             map files or memory allocation failures.
             <br>
             <b>
-            Makefile and project organization:</b> I had to create a Makefile to compile my project and organize
+              Makefile and project organization:</b> I had to create a Makefile to compile my project and organize
             my code into separate files for readability and maintainability.
             <h3 class="text-secondary mb-2">Overall Exprerience</h3>
-            <p class="text-primary mb-2">
+            <p class="text-primary mb-3">
               Working on the "So_long" project was an incredibly rewarding experience that helped me improve my coding
               skills and allowed me to showcase my creativity. This project required me to think critically and
               creatively
@@ -222,6 +238,10 @@
               skills
               significantly.
             </p>
+            <h4 class="text-secondary mb-3">
+              You can find the whole code of the project on my <u><a href="https://github.com/VassoD"
+                  target="_blank">Github</a></u> account.
+              </h4>
         </div>
       </div>
     </div>
