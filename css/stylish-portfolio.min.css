@@ -556,6 +556,10 @@ footer.footer .social-link:hover {
   }
 } */
 
+.gif{
+  border-radius: 5px;
+}
+
 @media (max-width: 480px) {
   .text-typing {
     padding: 15px 5px;
@@ -563,6 +567,10 @@ footer.footer .social-link:hover {
     margin: 10px 0 10px 0;
     letter-spacing: -0.1px;
 
+  }
+
+  .gif {
+    width: 400px !important;
   }
 
   .masthead h1 {
