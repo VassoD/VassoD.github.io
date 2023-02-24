@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
   <link rel="manifest" href="/favicon/site.webmanifest">
   <title>Vasiliki Doropoulou</title>
-  
+
   <!-- Bootstrap Core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
@@ -156,29 +156,84 @@
   <section class="content-section" id="portfolio">
     <div class="container">
       <div class="content-section-heading text-center">
-        <h2 class="mb-5">So_long</h2>
-        <h3 class="text-secondary mb-5">A graphic project written in C for my school 42</h3>
-      </div>
-      <div>
-        <div>
-          <img class="rounded mx-auto d-block mb-4" src="img/so_long.gif" style="width:700px;" alt="so_long gif">
+        <h2 class="mb-3">Welcome to my project "So_long"!</h2>
+        <h3 class="text-secondary mb-3">A game in a maze</h3>
+        <img class="rounded mx-auto d-block mb-4" src="img/so_long.gif" style="width:700px;" alt="so_long gif">
+        <div class="project">
           <p class="text-center text-secondary mb-2">Yes, I'm obviously a Baby Yoda lover :)</p>
-          <p class="text-center text-secondary mb-0">I'll probably share the way I coded this later.</p>
+          <p class="text-primary mb-3">
+            The goal of this project is to create a game called "so_long" using the C programming language and the
+            Minilibx and Libft libraries. The game will be played on a 2D map consisting of walls, floor tiles, a
+            player character, collectible objects, and an exit tile.
+          </p>
+          <p class="text-primary mb-3">
+            The map is read from a file and validated for correctness using a series of functions. Once the map is
+            validated, it is displayed to the player using the Minilibx library, and the player can move their
+            character using the arrow keys on their keyboard.
+            <br>
+            The game ends when the player successfully collects all the objects and reaches the exit tile, and the
+            total number of steps taken by the player is displayed on the screen. The game also features a
+            "collectible counter" that displays the number of objects the player has collected so far.
+          </p>
+          <p class="text-primary mb-3">
+            To achieve this logic, the code uses various functions to check if the player is colliding with walls or
+            obstacles, and to update the player's position and collectible count when the player moves. I also used
+            flood fill algorithm to check if there is a path between the player and the exit (backtracking).
+            The player must navigate the map to collect all the objects and reach the exit tile while trying to use
+            the least possible number of steps.
+          </p>
+          <p class="text-primary mb-3">
+            From coding this project, I improved a number of valuable skills and gained experience in several
+            areas, including:
+            <br>
+            <b>
+            Programming logic:</b> I had to come up with an algorithm to move the player character through the game
+            board while avoiding obstacles and collecting items, with the goal of reaching the exit. This required
+            logical thinking and problem-solving skills.
+            <br>
+            <b>Memory management:</b>
+            I had to allocate and deallocate memory for various data structures, such as the map
+            and the player's inventory.
+            <br>
+            <b>Input/output:</b>
+            I had to read in the game map from a file and display it on the screen, as well as accept
+            user input to move the player.
+            <br>
+            <b>Graphics programming:</b>
+            I used the Minilibx library to create the game window and display images of the
+            player, walls, collectibles, and exit.
+            <br>
+            <b>Error handling:</b> I had to anticipate and handle errors that might arise during the game, such as
+            invalid
+            map files or memory allocation failures.
+            <br>
+            <b>
+            Makefile and project organization:</b> I had to create a Makefile to compile my project and organize
+            my code into separate files for readability and maintainability.
+            <h3 class="text-secondary mb-2">Overall Exprerience</h3>
+            <p class="text-primary mb-2">
+              Working on the "So_long" project was an incredibly rewarding experience that helped me improve my coding
+              skills and allowed me to showcase my creativity. This project required me to think critically and
+              creatively
+              to develop a visually game. I had to carefully consider the game mechanics and user
+              interface to create a seamless and enjoyable experience for the player. This required me to develop
+              efficient
+              algorithms for generating the maze and designing the game elements, which helped me improve my coding
+              skills
+              significantly.
+            </p>
         </div>
       </div>
     </div>
   </section>
-
-
-
 
   <!-- CONTACT -->
 
   <section class="content-section" id="contact">
     <footer class="footer text-center">
       <div class="container">
-        <h3 class="mb-5">Find me 😊</h3>
-        <ul class="list-inline mb-5">
+        <h3 class="mb-3">Find me 😊</h3>
+        <ul class="list-inline mb-3">
           <li class="list-inline-item">
             <a class="social-link rounded-circle text-white mr-3" href="mailto:vkdoropoulou@gmail.com" target="_blank"
               title="email">
@@ -252,14 +307,6 @@
     </div>
   </div>
 
-
-  <script>
-    document.querySelector(".nightmode").addEventListener("click", () => {
-      document.querySelector(".moon-logo").classList.toggle("animate-moon");
-      document.querySelector(".sun-logo").classList.toggle("animate-sun");
-      document.querySelector("body").classList.toggle("dark");
-    })
-  </script>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>

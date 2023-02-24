@@ -22,14 +22,25 @@ body {
   color: #fff;
 }
 
-h3 a {
-  color: #605565;
-}
-
-h3 a:hover {
+h3, h4 a {
   color: #A996B2;
 }
 
+h3 {
+  font-size: 20px !important;
+}
+
+h4 {
+  font-size: 16px !important;
+}
+
+h3, h4 a:hover {
+  color: #605565;
+}
+
+.mb-5 {
+  color: #605565 !important;
+}
 
 .btn-xl {
   padding: 1rem 1.2rem;
@@ -67,8 +78,8 @@ h6 {
 }
 
 .img-fluid {
-  margin-left: 0.5em;
-  margin-bottom: 0.5em;
+  margin: 1em 1em 0em 1em;
+
   max-width: 100%;
   height: auto;
 }
@@ -108,7 +119,7 @@ h6 {
 }
 
 .scroll-to-top:hover {
-  background: #7A6;
+  background: #A996B2;
 }
 
 .scroll-to-top i {
@@ -314,6 +325,15 @@ a {
   top: 0;
   bottom: 0;
   z-index: 1;
+  margin: 1em;
+}
+
+.portfolio-item .caption {
+  transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+  transition: clip-path 0.25s ease-out, background-color 0.7s;
+  transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+  -webkit-clip-path: inset(0px);
+  clip-path: inset(0px);
 }
 
 .portfolio-item .caption .caption-content {
@@ -341,13 +361,6 @@ a {
     margin: 0;
   }
 
-  .portfolio-item .caption {
-    transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
-    transition: clip-path 0.25s ease-out, background-color 0.7s;
-    transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
-    -webkit-clip-path: inset(0px);
-    clip-path: inset(0px);
-  }
 
   .portfolio-item .caption .caption-content {
     transition: opacity 0.25s;
@@ -441,6 +454,8 @@ footer.footer .social-link:hover {
 
 .text-primary {
   color: #605565 !important;
+  line-height: 1.5;
+  margin-top: 0.5rem;
 }
 
 .lighter {
@@ -517,12 +532,6 @@ footer.footer .social-link:hover {
   margin: 0;
   font-size: 1.15em;
   font-weight: bold;
-}
-
-.timeline__paragraph {
-  line-height: 1.5;
-  color: #605565;
-  margin-top: 0.5rem;
 }
 
 .timeline__point--bottom {
@@ -925,4 +934,14 @@ body {
   left: 0;
   right: 0;
   z-index: -1;
+}
+
+.project{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.10), 0 1px 0 0 rgba(44, 44, 44, 0.05);
+  padding: 20px;
 }
