@@ -84,6 +84,11 @@ h4 {
   font-size: 16px !important;
 }
 
+h1 {
+  font-family: "Architects Daughter", cursive;
+  font-size: 4rem;
+}
+
 h3,
 h4 a:hover {
   color: #605565;
@@ -154,7 +159,7 @@ h4 a:hover {
   font-weight: 800;
 }
 
-/* Side Menu */
+/* Sidebar */
 #sidebar-wrapper {
   position: fixed;
   z-index: 2;
@@ -163,8 +168,14 @@ h4 a:hover {
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #605565;
+  background: rgba(
+    96,
+    85,
+    101,
+    0.7
+  ); /* Apply the glassmorphism effect to the sidebar background */
   border-left: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px); /* Apply the blur effect to the sidebar */
 }
 
 .sidebar-nav {
@@ -326,10 +337,6 @@ a {
 
 .content-section h2 {
   color: #605565;
-}
-
-.name {
-  font-size: 30px;
 }
 
 .gif {
