@@ -1,18 +1,17 @@
+/* About Section */
 #about {
   margin-top: 25%;
   position: relative;
   display: table;
   width: 100%;
   height: 100%;
-  /* background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 80%), url("../img/UI.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover; */
   z-index: 1;
 }
 
+/* Timeline Section */
 .timeline__title {
   color: #605565;
+  font-size: 1.25rem;
 }
 
 #timelinediv {
@@ -33,13 +32,8 @@
 
 .timeline__component--bg {
   padding: 1.5em;
-  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
   border-radius: 15px;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.05), 0 1px 0 0 rgba(0, 0, 0, 0.05);
-}
-
-.timeline__component--bottom {
-  margin-bottom: 0;
 }
 
 .timeline__middle {
@@ -58,90 +52,58 @@
   border-radius: 50%;
 }
 
-.timeline__point--bottom {
-  top: initial;
-  bottom: 0;
-}
-
 .timeline__date--right {
   text-align: right;
 }
 
-.timeline__title {
-  margin: 0;
-  font-size: 1.15em;
-  font-weight: bold;
+/* Dark Mode Toggle */
+.nightmode {
+  position: fixed;
+  margin-left: 12px;
+  margin-top: 5px;
+  z-index: 5;
 }
 
-.timeline__point--bottom {
-  top: initial;
-  bottom: -1em;
+.nightmode:hover {
+  cursor: pointer;
 }
 
-.img-fluid-resp {
-  max-width: 100%;
-  height: 400px;
+.dark {
+  background-color: #0a0a0a;
 }
 
-.caption-content p {
-  font-size: 14px !important;
+.sun,
+.moon {
+  font-size: 2rem;
+  width: fit-content;
+  height: fit-content;
 }
 
-.timeline__title a {
-  color: #605565;
-}
-
-.timeline__title a:hover {
-  color: #a996b2;
-}
-
-.portfolio-item {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  max-width: 400px;
-  /* margin: auto auto 1rem; */
-  /* border-radius: 0.5rem; */
-}
-
-.portfolio-item .caption {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(96, 85, 101, 0.7);
+.sun {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-  margin: 1em;
+  inset: 0;
 }
 
-.portfolio-item .caption {
-  transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
-  transition: clip-path 0.25s ease-out, background-color 0.7s;
-  transition: clip-path 0.25s ease-out, background-color 0.7s,
-    -webkit-clip-path 0.25s ease-out;
-  -webkit-clip-path: inset(0px);
-  clip-path: inset(0px);
+.sun-logo {
+  opacity: 0;
+  transform: translateY(20%) rotateZ(50deg);
+  transition: all 1s ease-out;
 }
 
-.portfolio-item .caption .caption-content {
-  color: #fff;
-  margin: auto 2rem 2rem;
+.moon-logo {
+  opacity: 1;
+  transform: translateY(0) rotateZ(0deg);
+  transition: all 1s ease-out;
 }
 
-.portfolio-item .caption .caption-content h2 {
-  font-size: 0.8rem;
-  text-transform: uppercase;
+.animate-moon {
+  opacity: 0;
+  transform: translateY(20%) rotateZ(100deg);
 }
 
-.portfolio-item .caption .caption-content p {
-  font-weight: 300;
-  font-size: 1.2rem;
-}
-
-.portfolio-item .caption .caption-content h4 {
-  font-size: 14px !important;
+.animate-sun {
+  opacity: 1;
+  transform: translateY(0%) rotateZ(0deg);
 }
 
 footer.footer {

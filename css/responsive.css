@@ -4,17 +4,6 @@
   }
 }
 
-/*________________________________@MEDIA______________________*/
-/* 
-@media (min-width: 992px) {
-  .masthead {
-    height: 100vh;
-  }
-
-  .masthead h1 {
-    font-size: 2.5rem;
-  }
-} */
 @media (min-width: 992px) {
   .portfolio-item {
     max-width: none;
@@ -26,25 +15,6 @@
     margin-left: 5rem;
     margin-right: 5rem;
     margin-bottom: 5rem;
-  }
-
-  .portfolio-item img {
-    transition: -webkit-clip-path 0.25s ease-out;
-    transition: clip-path 0.25s ease-out;
-    transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
-    -webkit-clip-path: inset(-1px);
-    clip-path: inset(-1px);
-  }
-
-  .portfolio-item:hover img {
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
-  }
-
-  .portfolio-item:hover .caption {
-    background-color: #605565;
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
   }
 }
 
@@ -88,9 +58,7 @@
   }
 
   #timelinediv {
-    padding: 0;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 25px 0;
     margin: 0;
     width: 100%;
   }
@@ -102,10 +70,6 @@
   .timeline__component--bg {
     padding: 1.5em;
     border-radius: 0px;
-  }
-
-  .timeline__point {
-    transform: translate(-50%, -50%);
   }
 
   .timeline__date--right {
@@ -120,65 +84,8 @@
     top: -1.5em;
     padding-left: 1.5em;
   }
+
   .portfolio-item .caption {
     margin: 0;
   }
-}
-
-/* __________________________________________________ */
-.nightmode {
-  position: fixed;
-  margin-left: 12px;
-  margin-top: 5px;
-  z-index: 5;
-}
-
-.nightmode:hover {
-  cursor: pointer;
-}
-
-.dark {
-  background-color: #0a0a0a;
-}
-
-.sun,
-.moon {
-  font-size: 2rem;
-  width: fit-content;
-  height: fit-content;
-}
-
-.sun {
-  position: absolute;
-  inset: 0;
-}
-
-.sun-logo {
-  opacity: 0;
-  transform: translateY(20%) rotateZ(50deg);
-  transition: all 1s ease-out;
-}
-
-.moon-logo {
-  opacity: 1;
-  transform: translateY(0) rotateZ(0deg);
-  transition: all 1s ease-out;
-}
-
-.animate-moon {
-  opacity: 0;
-  transform: translateY(20%) rotateZ(100deg);
-}
-
-.animate-sun {
-  opacity: 1;
-  transform: translateY(0%) rotateZ(0deg);
-}
-
-.animate-sun path {
-  fill: white;
-}
-
-.animate-moon path {
-  fill: white;
 }

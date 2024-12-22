@@ -1,16 +1,14 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap'); */
+/* Font imports */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+/* CSS files import */
 @import url("core.css");
 @import url("home.css");
 @import url("animation.css");
 @import url("responsive.css");
-/* @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
-/* @import url("https://fonts.googleapis.com/css2?family=Inconsolata|Fira+Mono&display=swap"); */
 
-/* Colors used: 
+/* Palette: 
 #605565;
 #A996B2;
 #0A0A0A;
