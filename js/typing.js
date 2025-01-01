@@ -1,3 +1,4 @@
+const textDisplay = document.querySelector(".text-typing");
 const phrases = [
   "Building intuitive web applications ✨",
   "Turning designs into pixel-perfect code ✨",
@@ -9,34 +10,63 @@ const phrases = [
   "Passionate about UX/UI excellence ✨",
 ];
 
-const typingTextElement = document.getElementById("typing-text");
-let phraseIndex = 0;
-let charIndex = 0;
+let i = 0;
+let j = 0;
+let currentPhrase = [];
+let isDeleting = false;
+let isEnd = false;
+let cursorVisible = true;
 
-function typeText() {
-  if (charIndex < phrases[phraseIndex].length) {
-    typingTextElement.textContent += phrases[phraseIndex].charAt(charIndex);
-    charIndex++;
-    setTimeout(typeText, 100);
-  } else {
-    setTimeout(eraseText, 2000);
-  }
+function updateDisplay() {
+  // Always maintain at least one non-breaking space to prevent collapse
+  const text = currentPhrase.length > 0 ? currentPhrase.join("") : "\u00A0";
+  textDisplay.innerHTML = text + (cursorVisible ? "|" : "\u00A0");
 }
 
-function eraseText() {
-  if (charIndex > 0) {
-    typingTextElement.textContent = phrases[phraseIndex].substring(
-      0,
-      charIndex - 1
-    );
-    charIndex--;
-    setTimeout(eraseText, 50);
-  } else {
-    phraseIndex = (phraseIndex + 1) % phrases.length;
-    setTimeout(typeText, 500);
+function loop() {
+  isEnd = false;
+
+  if (i < phrases.length) {
+    if (!isDeleting && j <= phrases[i].length) {
+      currentPhrase.push(phrases[i][j]);
+      j++;
+      updateDisplay();
+    }
+
+    if (isDeleting && j <= phrases[i].length) {
+      currentPhrase.pop();
+      j--;
+      updateDisplay();
+    }
+
+    if (j == phrases[i].length) {
+      isEnd = true;
+      isDeleting = true;
+    }
+
+    if (isDeleting && j === 0) {
+      currentPhrase = [];
+      isDeleting = false;
+      i++;
+      if (i === phrases.length) {
+        i = 0;
+      }
+    }
   }
+
+  const spedUp = 50;
+  const normalSpeed = 100;
+  const time = isEnd ? 2000 : isDeleting ? spedUp : normalSpeed;
+
+  setTimeout(loop, time);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  typeText();
-});
+// Cursor blinking effect
+setInterval(() => {
+  cursorVisible = !cursorVisible;
+  updateDisplay();
+}, 400);
+
+// Initialize with a non-breaking space
+textDisplay.innerHTML = "\u00A0";
+loop();
