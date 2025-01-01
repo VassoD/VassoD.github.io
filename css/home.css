@@ -57,14 +57,14 @@
 }
 
 /* Dark Mode Toggle */
-.nightmode {
+.darkMode {
   position: fixed;
   margin-left: 12px;
   margin-top: 5px;
   z-index: 5;
 }
 
-.nightmode:hover {
+.darkMode:hover {
   cursor: pointer;
 }
 
